@@ -1,0 +1,29 @@
+/* css */
+*{
+  box-sizing: border-box;
+  font-family: "Helvetica", Times, serif;
+  line-height: normal;
+  background-color: #c5ce90;
+  }
+
+.garden-area {
+  background-image: url(../img/spgarden.jpg);
+  height: 523px;
+  width: 800px;
+  background-color: #A9A9A9;
+  position: relative;
+}
+
+.icon-box {
+  background-color: #A9A9A9;
+  height: 100px;
+  width: 800px;
+}
+
+.text-above {
+  position: relative;
+}
+
+.text-below {
+  position: relative;
+}
