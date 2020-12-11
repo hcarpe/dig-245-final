@@ -15,9 +15,10 @@
 }
 
 .icon-box {
-  background-color: #A9A9A9;
   height: 100px;
-  width: 800px;
+  width: 600px;
+  border-width: 2px !important;
+  border-color: black !important;
 }
 
 .text-above {
@@ -26,4 +27,8 @@
 
 .text-below {
   position: relative;
+}
+
+.icon {
+  position: absolute;
 }
