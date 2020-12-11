@@ -4,9 +4,9 @@
  Start by defining all the data needed for the game
 ********************************************************/
 
-var numberCorrect = 0,
-	numberErrors = 0,
-	dragZ = 10;
+var toolscomplete = false;
+var seedscomplete = false;
+var watercomplate = false;
 
 
 
@@ -14,33 +14,36 @@ var numberCorrect = 0,
  Add draggable / droppable functions
 ********************************************************/
 
-$(".gnome1").draggable({
+$(".toolsicon").draggable({
 	// always show dragging on top
 	drag: function(){
-		$(".gnome1").css({
+		$(".toolsicon").css({
 			"z-index": ++dragZ
 		});
 	},
 	// if draggable was dropped on an accepting droppable elem
 	revert: function(dropElem) {
 		// if draggable was released over correct droppable
-		if (dropElem && dropElem.hasClass("gnome1-target")) {
+		if (dropElem && dropElem.hasClass("garden-area")) {
 			console.log("correct!", dropElem);
 			// update style
-			$(".gnome1-target").css({
-				"background-color": "green"
-			});
+			//$(".garden-area").css({
+				//"background-color": "green"
+			//});
 			// disable dragging this
-			$(".gnome1").draggable("disable");
-			numberCorrect++;
+			$(".toolsicon").draggable("disable");
+			toolscomplete = true;
 		} else {
 			console.log("wrong!", dropElem);
-			numberErrors++;
+			toolscomplete = false;
 		}
-		updateScore();
+		updateGame();
 	},
 	revertDuration: 200
 });
+
+
+
 $(".gnome2").draggable({
 	// always show dragging on top
 	drag: function(){
@@ -118,21 +121,23 @@ $(document).on("click", ".game-end-btn", gameEnd);
  Other functions
 ********************************************************/
 
-function updateScore() {
-	$("#numberCorrect").html(numberCorrect);
-	$("#numberErrors").html(numberErrors);
+function updateGame() {
+  //handle logic here after dragging
+	if (toolscomplete && seedscomplete && watercomplete){
+    console.log(4);
+  }
 }
 
 
 // play sound function
-function playSound(selector) {
+//function playSound(selector) {
 	// get reference
-	var audio = $(selector)[0];
+	//var audio = $(selector)[0];
 	// if muted (required for Chrome) then unmute
-	if (audio.muted)
-		audio.muted = false;
+	//if (audio.muted)
+		//audio.muted = false;
 	// if already playing then reset
-	audio.currentTime = 0;
+	//audio.currentTime = 0;
 	// finally, play
-	audio.play();
-}
+	//audio.play();
+//}
