@@ -24,6 +24,7 @@ $(".toolsicon").draggable({
 	},
 	// if draggable was dropped on an accepting droppable elem
 	revert: function(dropElem) {
+    console.log("dropElem =", dropElem);
 		// if draggable was released over correct droppable
 		if (dropElem && dropElem.hasClass("garden-area")) {
 			console.log("correct!", dropElem);
