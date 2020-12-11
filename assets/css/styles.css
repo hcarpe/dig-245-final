@@ -7,10 +7,9 @@
   }
 
 .garden-area {
-  background-image: url(../img/spgarden.jpg);
+  /*background-image: url(../img/spgarden.jpg);*/
   height: 523px;
   width: 800px;
-  background-color: #A9A9A9;
   position: relative;
 }
 
