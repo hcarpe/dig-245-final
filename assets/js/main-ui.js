@@ -7,6 +7,7 @@
 var toolscomplete = false;
 var seedscomplete = false;
 var watercomplate = false;
+var dragZ = 10;
 
 
 
