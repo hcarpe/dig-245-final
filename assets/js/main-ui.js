@@ -38,7 +38,7 @@ $(".toolsicon").draggable({
 			// disable dragging this
 			$(".toolsicon").draggable("disable");
 			toolscomplete = true;
-      $(".garden-area").attr("url","../img/cat.jpg");
+      $(".garden-area").attr(".garden-area","background-image: url(../img/cat.jpg);");
 		} else {
 			console.log("wrong!", dropElem);
 			toolscomplete = false;
