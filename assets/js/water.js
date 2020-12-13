@@ -6,7 +6,7 @@
 
 var toolscomplete = false;
 var seedscomplete = false;
-var watercomplete = false;
+var watercomplete = true;
 var dragZ = 10;
 
 /*******************************************************
@@ -96,17 +96,7 @@ $(".watercanicon").draggable({
 
 
 // set which draggables the droppables accept
-if (seedscomplete == false) {
-  $(".garden-area").droppable({
-  	accept: ".seedsicon"
-  });
-}
-if (seedscomplete == true && toolscomplete == false) {
-  $(".garden-area").droppable({
-  	accept: ".toolsicon"
-  });
-}
-if (toolscomplete == true && seedscomplete == true) {
+if (watercomplete == true) {
   $(".garden-area").droppable({
   	accept: ".watercanicon"
   });

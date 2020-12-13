@@ -36,3 +36,9 @@
 .icon {
   position: absolute;
 }
+
+.next-thing {
+  width: 352px;
+  height: 200px;
+  position: relative;
+}

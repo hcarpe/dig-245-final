@@ -4,7 +4,7 @@
  Start by defining all the data needed for the game
 ********************************************************/
 
-var toolscomplete = false;
+var toolscomplete = true;
 var seedscomplete = false;
 var watercomplete = false;
 var dragZ = 10;
@@ -96,18 +96,8 @@ $(".watercanicon").draggable({
 
 
 // set which draggables the droppables accept
-if (seedscomplete == false) {
-  $(".garden-area").droppable({
-  	accept: ".seedsicon"
-  });
-}
-if (seedscomplete == true && toolscomplete == false) {
+if (toolscomplete == true) {
   $(".garden-area").droppable({
   	accept: ".toolsicon"
-  });
-}
-if (toolscomplete == true && seedscomplete == true) {
-  $(".garden-area").droppable({
-  	accept: ".watercanicon"
   });
 }
