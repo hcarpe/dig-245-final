@@ -7,8 +7,14 @@
   }
 
 .garden-area {
-  height: 523px;
-  width: 800px;
+  height: 360px;
+  width: 536px;
+  position: relative;
+}
+
+.wrongpgimg {
+  height: 400px;
+  width: 400px;
   position: relative;
 }
 

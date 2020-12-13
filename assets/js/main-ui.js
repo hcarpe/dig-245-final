@@ -34,7 +34,7 @@ $(".seedsicon").draggable({
 		} else {
 			console.log("wrong!", dropElem);
 			seedscomplete = false;
-      window.location.href = "../pages/seedswrong.html";
+      window.location.href = "../pages/wrong.html";
 		}
 	},
 	revertDuration: 200
@@ -61,7 +61,7 @@ $(".toolsicon").draggable({
 		} else {
 			console.log("wrong!", dropElem);
 			toolscomplete = false;
-      window.location.href = "../pages/toolswrong.html";
+      window.location.href = "../pages/wrong.html";
 		}
 	},
 	revertDuration: 200
@@ -88,7 +88,7 @@ $(".watercanicon").draggable({
 		} else {
 			console.log("wrong!", dropElem);
 			watercomplete = false;
-      window.location.href = "../pages/waterwrong.html";
+      window.location.href = "../pages/wrong.html";
 		}
 	},
 	revertDuration: 200
@@ -109,7 +109,6 @@ $(".trashicon").draggable({
 			console.log("correct!", dropElem);
 			// disable dragging this
 			$(".trashicon").draggable("disable");
-			watercomplete = true;
       window.location.href = "../pages/trash.html";
 		} else {
 			console.log("wrong!", dropElem);
@@ -157,10 +156,5 @@ if (seedscomplete == true && toolscomplete == false) {
 if (toolscomplete == true && seedscomplete == true) {
   $(".garden-area").droppable({
   	accept: ".watercanicon"
-  });
-}
-if (3==3) {
-  $(".garden-area").droppable({
-  	accept: ".wrongicon"
   });
 }
