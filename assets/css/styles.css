@@ -7,8 +7,8 @@
   }
 
 .garden-area {
-  height: 360px;
-  width: 536px;
+  height: 450px;
+  width: 689px;
   position: relative;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .icon-box {
-  height: 200px;
+  height: 100px;
   width: 600px;
   border-width: 2px !important;
   border-color: black !important;
