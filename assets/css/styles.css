@@ -19,22 +19,10 @@
 }
 
 .icon-box {
-  height: 100px;
+  height: 200px;
   width: 600px;
   border-width: 2px !important;
   border-color: black !important;
-}
-
-.text-above {
-  position: relative;
-}
-
-.text-below {
-  position: relative;
-}
-
-.icon {
-  position: absolute;
 }
 
 .next-thing {
